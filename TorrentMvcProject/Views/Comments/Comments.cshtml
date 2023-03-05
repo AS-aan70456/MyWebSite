@@ -1,0 +1,34 @@
+﻿@using TorrentMvcProject.ViewModel
+
+@model CommentsViewModel
+
+
+@{
+    foreach (var els in Model._allComments)
+    {
+        <div class="row-item-main">
+            <div class="row-container">
+                <img class="commentar-img" src="~/img/noavatar.png">
+                <div class="commentar-content">
+                    <div class="commentar-Title">@els.Name</div>
+                    <div class="commentar-Text">@els.Text</div>
+                </div>
+            </div>
+        </div>
+    }
+
+    if (ViewBag.Max)
+    {
+        <a href="@ViewBag.next" class="com-bnt">Next</a>
+    }
+    if (@ViewBag.ID > 0)
+    {
+        <a href="@ViewBag.back" class="com-bnt" style="background-color:#464646; ">Last</a> }
+    else
+    {
+        <a class="com-bnt" style="background-color: #f1f5f7; ">Last</a>
+    }
+
+
+}
+<div style="height: 20px;"></div>

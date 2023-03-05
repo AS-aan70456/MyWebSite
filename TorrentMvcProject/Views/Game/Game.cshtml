@@ -1,0 +1,115 @@
+﻿@using TorrentMvcProject.ViewModel;
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model HomeViewModel
+
+<div class="row-item-main">
+    <div class="row-container">
+
+        <div class="main-title">@Model.Game.name [@Model.Game.version | Rus] скачать торрент</div>
+        <img src="@Model.Game.mainImg" class="main-img">
+        <div class="impression">
+            <button class="Like" type="" name=""><i class="fa-regular fa-thumbs-up"></i>@Model.Game.dizlike</button>
+            <button class="dizLike" type="" name=""><i class="fa-regular fa-thumbs-down"></i>@Model.Game.like</button>
+        </div>
+        <div class="descriptions">@Model.Game.desc</div>
+        <div class="games-img">
+            <img class="games-img-item" src="@Model.Game.img1">
+            <img class="games-img-item" src="@Model.Game.img2">
+            <img class="games-img-item" src="@Model.Game.img3">
+            <img class="games-img-item" src="@Model.Game.img4">
+        </div>
+        <div class="main-youtub">
+            <a href="https://www.youtube.com/watch?v=SpCUuyZZTp8&t=4896s&ab_channel=%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BB%D0%B5%D0%BD%D0%9C%D0%B8%D0%BD%D0%B8%D0%BD">Трейлер игри</a>
+        </div>
+        <div class="game-info">
+            <div class="game-info-item">
+                <div class="info-item-title">Информация    	       </div>
+                <div class="info-item-desc">Дата выхода:   	       <div class="info-item-vaule">__@Model.Game.ReleaseDate	 </div></div>
+                <div class="info-item-desc">Жанр:          	       <div class="info-item-vaule">__@Model.Game.teg             </div></div>
+                <div class="info-item-desc">Разработчик и издатель:<div class="info-item-vaule">__@Model.Game.developer       </div></div>
+                <div class="info-item-desc">Текст:         	       <div class="info-item-vaule">__@Model.Game.languages       </div></div>
+            </div>
+            <div class="game-info-item">
+                <div class="info-item-title">Системные требования  </div>
+                <div class="info-item-desc">Windows:       	       <div class="info-item-vaule">__@Model.Game.Windows         </div></div>
+                <div class="info-item-desc">Процессор:     	       <div class="info-item-vaule">__@Model.Game.CPU             </div></div>
+                <div class="info-item-desc">Оперативная память:    <div class="info-item-vaule">__@Model.Game.RAM             </div></div>
+                <div class="info-item-desc">Видеокарта:    	       <div class="info-item-vaule">__@Model.Game.videoCard       </div></div>
+                <div class="info-item-desc">Место на диске:	       <div class="info-item-vaule">__@Model.Game.Windows         </div></div>
+            </div>
+        </div>
+
+        <div class="summarize">Размер : @Model.Game.Windows гб</div>
+        <div class="torrent">
+            <div class="torren-bnt"><a  href="https://img/Frostpunk/Torrent.torrent" download="">Скачать torrent</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="row-item-main">
+    <div class="row-container">
+        <div class="main-title">#Похоже игри : </div>
+        <div class="likeGames">
+            <div class="likeGames-box">
+                <div class="likeGames-item">
+                    <img class="likeGames-img" src="/img/FrestPunk/f4.jpg">
+                    <div class="likeGames-Title">Названия игри</div>
+                </div>
+                <div class="likeGames-item">
+                    <img class="likeGames-img" src="/img/FrestPunk/f4.jpg">
+                    <div class="likeGames-Title">Названия игри</div>
+                </div>
+                <div class="likeGames-item">
+                    <img class="likeGames-img" src="/img/FrestPunk/f4.jpg">
+                    <div class="likeGames-Title">Названия игри</div>
+                </div>
+            </div>
+            <div class="likeGames-box">
+                <div class="likeGames-item">
+                    <img class="likeGames-img" src="/img/FrestPunk/f4.jpg">
+                    <div class="likeGames-Title">Названия игри</div>
+                </div>
+                <div class="likeGames-item">
+                    <img class="likeGames-img" src="/img/FrestPunk/f4.jpg">
+                    <div class="likeGames-Title">Названия игри</div>
+                </div>
+                <div class="likeGames-item">
+                    <img class="likeGames-img" src="/img/FrestPunk/f4.jpg">
+                    <div class="likeGames-Title">Названия игри</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row-item-main">
+    <form asp-action="Game" method="post" class="row-container">
+        <div class="main-title">#Добавить свой комментарий:</div>
+        <div class="outLine">
+            <input asp-for="@Model.newComment.Name" class="outLine-input"  placeholder="Ваше имя">
+
+            <input asp-for="@Model.newComment.Gmail" class="outLine-input"  placeholder="Ваш e-mail(необизательно)">
+
+
+        </div>
+
+        <textarea asp-for="@Model.newComment.Text" class="TextCom" placeholder="Ваш комментарий"></textarea>
+
+        <div style="padding-bottom: 15px;"><input class="com-bnt" type="submit" value="Добавить" input></div>
+    </form>
+</div>
+
+@{
+    foreach (var els in Model.allComment)
+    {
+        <div class="row-item-main">
+            <div class="row-container">
+                <img class="commentar-img" src="~/img/noavatar.png">
+                <div class="commentar-content">
+                    <div class="commentar-Title">@els.Name</div>
+                    <div class="commentar-Text">@els.Text</div>
+                </div>
+            </div>
+        </div>
+    }
+}

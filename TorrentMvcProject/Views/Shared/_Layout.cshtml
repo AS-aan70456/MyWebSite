@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Oscar</title>
+    @await Html.PartialAsync("MetaPartial.cshtml")
+    @await Html.PartialAsync("CssPartial.cshtml")
+
+</head>
+<body style="background-image: url(/img/1.jpg); background-repeat: repeat; ">
+
+    <div class="main-container">
+
+        @await Html.PartialAsync("HeaderPartial.cshtml")
+
+        <div class="subHeader">
+            <nav class="nav">
+                <div class="scrol">
+                    <input class="nav-scrol" type="" name="0" placeholder="Поиск по сайту">
+                    <button class="bnt-scrol" type="" name=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a class="nav-link" href="/Home/Home"><div class="nav-text">Главная</div></a>
+                <a class="nav-link" href="/Comments/Comments"><div class="nav-text">Комментарии</div></a>
+                <a class="nav-link" href="#"><div class="nav-text">обратная связь</div></a>
+            </nav>
+        </div>
+
+        <div class="row">
+
+            @await Html.PartialAsync("SidebarPartial.cshtml")
+            <div class="row-content">
+                @RenderBody()
+            </div>
+        </div>
+
+        @await Html.PartialAsync("FooterPartial.cshtml")
+        @await Html.PartialAsync("JavaScriptPartial.cshtml")
+
+    </div>
+</body>
+</html>

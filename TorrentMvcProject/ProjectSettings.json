@@ -1,0 +1,9 @@
+{
+  "Project": {
+    "ConnectionString": "Server=(localdbs)\\MSSQLLocalDBS;Database=TEST;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "CompanyName": "My DeBilding Company",
+    "CompanyPhone": "0682910355",
+    "CompanyHelpPhone": "0682910355",
+    "CompanyEmail": "deen70456@gmail.com"
+  }
+}

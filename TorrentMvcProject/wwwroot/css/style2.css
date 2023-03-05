@@ -1,0 +1,599 @@
+body {
+	font-family: 'Exo', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-container {
+	width: 1200px;
+	margin: 50px auto;
+}
+
+.row-container {
+	width: 94%;
+	margin: 25px auto;
+	display: block;
+}
+
+hr {
+	display: block;
+	unicode-bidi: isolate;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	overflow: hidden;
+	border-style: inset;
+	border-width: 1px;
+}
+
+.min-h {
+	min-height:700px;
+
+}
+
+.Header {
+	background-color: #f1f5f7;
+}
+
+.Header-content {
+	background: url(C:/Users/User/Desktop/Mogo/Assets/img/devices.png) center no-repeat;
+	width: 100%;
+	height: 170px;
+	position: relative;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.30);
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.Logo {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 30px;
+	padding: 15px;
+	background-color: green;
+	border-radius: 5px;
+	color: white;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.30);
+}
+
+.Logo-Title {
+	font-size: 20px;
+	font-weight: 700px;
+}
+
+.Logo-subTitle {
+	font-size: 25px;
+	font-weight: 700px;
+}
+
+.nav {
+	width: 100%;
+	height: 45px;
+	background-color: #f1f5f7;
+}
+
+.Header .nav .nav-link {
+	float: right;
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.Header .nav {
+	background-color: rgba(0,0,0,0);
+}
+
+.nav-link {
+	float: left;
+	color: black;
+	width: 125px;
+	height: 100%;
+	border-right: 1px solid black;
+	text-align: center;
+}
+
+	.nav-link:last-child {
+		border-color: #f1f5f7;
+	}
+
+.nav-link {
+	margin-top: auto;
+	margin-bottom: auto;
+	position: relative;
+}
+
+.nav-text {
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 125px;
+}
+
+
+/* Row */
+.row {
+	display: flex;
+	background-color: #f1f5f7;
+	margin: 17px 0px;
+	box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.30);
+}
+
+.row-content {
+	position: relative;
+	padding-left: 0px;
+	float: left;
+	width: 80%;
+	background-color: #f1f5f7;
+	margin-top: 0px;
+}
+
+.row-item-main {
+	background-color: #fff;
+	padding-left: 0px;
+	min-height: 120px;
+	width: 97%;
+	margin: auto;
+	margin-top: 15px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.30);
+	margin-bottom: 50px;
+}
+
+	.row-item-main:last-child {
+		margin-bottom: 0px;
+	}
+
+/* mine-item */
+
+.main-title {
+	font-family: 'Roboto', sans-serif;
+	padding-top: 19px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.main-img {
+	width: 100%;
+	margin: 0px auto;
+}
+
+.impression {
+	display: flex;
+	margin: 6px 15px;
+	float: right;
+	width: 120px;
+	height: 38px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.30);
+}
+
+.Like {
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	height: 30px;
+	width: 55px;
+	margin: 4px;
+	border-radius: 8px;
+	background-color: green;
+	border: none;
+	transition: background-color .3s linear, color .3s linear;
+}
+
+.dizLike {
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	height: 30px;
+	width: 55px;
+	margin: 4px;
+	border-radius: 8px;
+	background-color: red;
+	border: none;
+	transition: background-color .3s linear, color .3s linear;
+}
+
+.descriptions {
+	margin-top: 25px;
+	font-size: 18px;
+}
+
+.games-img {
+	display: block;
+	width: 100%;
+	min-height: 120px;
+	margin: 40px auto;
+}
+
+.games-img-item {
+	width: 24%;
+}
+
+.main-youtub {
+	width: 93%;
+	padding: 20px 0px;
+	margin: 0px auto;
+	text-align: center;
+	background-color: #f1f5f7;
+	position: relative;
+	font-weight: 700;
+	font-size: 16px;
+	border-radius: 30px;
+	color: white;
+}
+
+/* GameInfo */
+
+.game-info {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	display: flex;
+	margin-top: 28px;
+}
+
+.game-info-item {
+	width: 50%;
+}
+
+.info-item-title {
+	font-size: 23px;
+	font-weight: 500;
+	margin-bottom: 12px;
+}
+
+	.info-item-title:after {
+		content: "";
+		display: block;
+		width: 82%;
+		height: 1px;
+		background-color: grey;
+		margin: 0 18px;
+		margin-top: 20px;
+	}
+
+
+.info-item-desc {
+	display: flex;
+	font-weight: 200;
+	font-size: 18px;
+	margin: 4px 0px;
+}
+
+.info-item-vaule {
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.summarize {
+	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+	width: 90%;
+	margin: 27px auto;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 500;
+	background-color: #f1f5f7;
+	border-top: 1px solid #464646;
+	border-bottom: 1px solid #464646;
+}
+
+.torrent {
+	padding-bottom: 20px;
+}
+
+
+/* Sidebar */
+.sidebar {
+	margin: 0px;
+	box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.30);
+	float: left;
+	padding-left: 0px;
+	width: 26%;
+	background-color: #464646;
+	min-height: 500px;
+	padding-bottom: 100%;
+}
+
+.sidebar-Title {
+	text-align: center;
+	box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.30);
+	background-color: black;
+	padding: 13px 0px;
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.list-box {
+	font-family: 'Roboto', sans-serif;
+	width: 80%;
+	height: all;
+	margin: 20px auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.list-title {
+	color: #eef3ac;
+	margin: 0px auto;
+	text-align: center;
+	font-weight: 800;
+	font-size: 16px;
+}
+
+.list-item {
+	width: 50%;
+	color: white;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.list-2 {
+	display: flex;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.list-4 {
+	display: flex;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+	.list-4 .list-item {
+		display: flex;
+		width: 25%;
+	}
+
+.list-box:after {
+	content: "";
+	display: block;
+	width: 190px;
+	height: 2px;
+	background-color: #f38181;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.list-box:last-child:after {
+	display: none;
+}
+
+/* LikeGames */
+
+.likeGames {
+	padding-bottom: 18px;
+}
+
+.likeGames-box {
+	display: flex;
+}
+
+.likeGames-item {
+	box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.35);
+	background-color: #464646;
+	margin: 20px;
+	width: 33%;
+	font-size: 19px;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	padding-bottom: 8px;
+}
+
+.likeGames-img {
+	width: 100%;
+}
+
+/* Coms */
+
+.outLine {
+	width: 100%;
+}
+
+.outLine-input {
+	font-size: 15px;
+	width: 47%;
+	border: none;
+	background: transparent;
+	outline: none;
+	border-bottom: 1px solid grey;
+	padding: 10px 0px margin:20px;
+	background-color: #f1f5f7;
+	height: 27px;
+}
+
+	.outLine-input:last-child {
+		float: right;
+	}
+
+.TextCom {
+	font-size: 19px;
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 200px;
+	margin-top: 20px;
+	padding-bottom: 110px;
+	border: none;
+	background: transparent;
+	outline: none;
+	border-bottom: 1px solid grey;
+	background-color: #f1f5f7;
+}
+
+/* Commentaries */
+
+.commentar-img {
+	width: 70px;
+	height: 70px;
+	margin-top: 15px;
+	position: absolute;
+}
+
+.commentar-Title {
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.commentar-Text {
+	padding-top: 15px;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.commentar-content {
+	padding-top: 15px;
+	margin-left: 80px;
+	padding-bottom: 13px;
+}
+
+.game-list {
+	justify-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 12px;
+	width: 90%;
+	padding-top: 70px;
+	margin: 20px auto;
+}
+
+.game-item {
+	font-family: 'Roboto', sans-serif;
+	width: 29%;
+	height: 170px;
+	margin: 20px 15px;
+	background-color: #19e67f;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.35);
+	border-radius: 12px;
+}
+
+.game-text {
+	text-align: center;
+	padding-top: 5px;
+}
+
+.game-img {
+	box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.35);
+	border-radius: 12px;
+	width: 100%;
+}
+
+.game-button {
+}
+
+.buttn-next {
+	background-color: green;
+	border-radius: 18px;
+	margin: 20px auto;
+}
+
+.buttn-last {
+}
+
+/* Footer */
+.footer {
+	background-color: #f1f5f7;
+	padding-bottom: 10px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.30);
+}
+
+.footer-content {
+	background-color: #464646;
+	color: white;
+	display: flex;
+	padding: 15px 0px;
+	box-shadow: 4px 4px 35px rgba(0, 0, 0, 0.70);
+}
+
+.footer-item {
+	position: relative;
+	width: 25%;
+	margin: 0px auto;
+}
+
+.footer-Title {
+	margin-bottom: 9px;
+	font-weight: 800;
+}
+
+.footer-Text {
+	font-size: 14px;
+}
+
+.sub-footer {
+	margin-left: 40px;
+}
+
+/* BNT */
+.com-bnt {
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.35);
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;
+	width: 20%;
+	background-color: green;
+	border-radius: 17px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px auto;
+}
+
+
+.torren-bnt {
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.35);
+	font-family: 'Roboto', sans-serif;
+	padding: 20px;
+	width: 30%;
+	background-color: green;
+	border-radius: 20px;
+	text-align: center;
+	color: white;
+	font-size: 21px;
+	font-weight: 500;
+	margin: 20px auto;
+}
+
+.bnt-scrol {
+	color: white;
+	height: 30px;
+	width: 32px;
+	margin: 2px;
+	margin-right: 5px;
+	border-radius: 8px;
+	background-color: #464646;
+	border: none;
+	transition: background-color .3s linear, color .3s linear;
+}
+
+	.bnt-scrol:hover {
+		background-color: black;
+	}
+
+.scrol {
+	display: flex;
+	margin: 6px 15px;
+	float: right;
+	width: 220px;
+	height: 34px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.30);
+}
+
+.nav-scrol {
+	margin-left: 9px;
+	width: 80%;
+	border: none;
+	background: transparent;
+	outline: none;
+}

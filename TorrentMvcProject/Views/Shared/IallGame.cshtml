@@ -1,0 +1,28 @@
+﻿
+
+<div class="row-item-main">
+    <div class="row-container">
+        <div class="game-list min-h">
+            @{ foreach (var el in Model._allGameItems)
+                {
+                    <a class="game-item" href="/Game/Game/@el.name">
+                        <img class="game-img" src=@el.mainImg>
+                        <div class="game-text">@el.name</div>
+                    </a>
+                }
+            }
+        </div>
+
+
+
+        <a href="@ViewBag.next" class="com-bnt">Next</a>
+        @{
+            if (@ViewBag.ID > 0) {
+                <a href="@ViewBag.back" class="com-bnt" style="background-color:#464646; ">Last</a> }
+            else{
+                <a class="com-bnt" style="background-color: #f1f5f7; ">Last</a>
+            }
+        }
+        <div style="height: 20px;"></div>
+    </div>
+</div>
